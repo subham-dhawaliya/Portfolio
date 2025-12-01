@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* border: .1rem solid white; */
+}
+
+:root {
+  --blue-purple: linear-gradient(90deg, #515ada, #24c6dc);
+  --gray-clr: #898989;
+  --dark-blue-clr: #171c22;
+  --blue-glow: #515ada; /* solid color for shadow/glow */
+}
+
+.bg-gradient {
+  background: var(--blue-purple) !important;
+  background-size: 200%;
+  background-position: center;
+  transition: background 0.5s ease;
+}
+
+.bg-dark-blue {
+  background: var(--dark-blue-clr);
+}
+.txt-gradient {
+  background: var(--blue-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.txt-gray {
+  color: var(--gray-clr);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  padding: 0.3rem 1rem; /* smaller padding */
+  height: 5rem; /* control total navbar height */
+}
+.navbar-brand img {
+  width: 70px; /* logo size smaller */
+  height: 70px;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+  background: rgba(13, 17, 23, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}   /*Pending*/
+
+
+.mybtn {
+  border: 0.1rem solid var(--blue-purple) !important;
+  padding: 0.4rem 1.6rem;
+}
+
+.mybtn:hover {
+  background: transparent;
+  color: var(--blue-purple) !important;
+}
+
+.mybtn.bg-gradient:hover {
+  background: var(--blue-purple);
+  color: #fff !important;
+  border-color: transparent;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 2.2rem;
+}
+
+.image-container {
+  width: 20rem; 
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-image: url(/images/3.jpg.jpg);
+  background-position: center;
+  background-size: cover; 
+  box-shadow: 0 0 10px white, 0 0 15px var(--blue-glow);
+  margin: auto;
+}
+
+
+/* .image-container {
+  width: 27rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(
+      45deg,
+      rgba(81, 90, 218, 0.4),
+      rgba(36, 198, 220, 0.3)
+    ),
+    url(/images/myphoto.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 40px rgba(81, 90, 218, 0.8);
+}      demo */
+
+.hero-section {
+  min-height: 88vh;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 4rem;
+  font-family: "Merriweather Sans", sans-serif;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 0.95rem;
+}
+
+.para {
+  max-width: 500px;
+}
+
+.main-txt {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.about-me {
+  width: 25rem;
+  margin: 0 auto;
+}
+
+.section-container {
+  padding-block: 4rem;
+}
+
+.skill-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+
+.skill-img:hover {
+  transform: scale(1.2); /* thoda zoom effect on hover */
+  filter: drop-shadow(0 0 15px #2575fc);
+}
+
+.card.bg-dark-blue {
+  background: rgba(23, 28, 34, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+} /*sochn padega bcoz sab card pe apply hori hain*/
+
+
+/* .skill-img {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+} */
+
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: "";
+  background: var(--blue-purple);
+  position: absolute;
+  inset: 4rem;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(70px);
+}
+
+.hover-card:hover {
+  background: var(--blue-purple);
+}
+
+.hover-card:hover * {
+  color: black !important;
+}
+
+.mycard {
+  transform: scale(1);
+  width: 21rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mycard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(36, 198, 220, 0.5);
+}   /*work on it*/
+
+
+.blog-card {
+  width: 20rem;
+}
+
+form {
+  width: 33rem;
+  background: rgba(81, 90, 218, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-control {
+  border: 0.1rem solid var(--gray-clr);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 0.1rem solid var(--gray-clr);
+}
+
+.btn.bg-black {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  border: none;
+}
+
+.btn.bg-black:hover {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
+
+#floatingTextarea {
+  resize: none;
+  height: 17vh;
+}
+
+.line {
+  background: white;
+  height: 0.1rem;
+  width: 100%;
+}
+
+.profile {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 50%;
+}
+
+
+footer {
+  background: rgba(13, 17, 23, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-block: 2rem;
+}
+
+footer i:hover {
+  color: #2575fc;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  .image-container {
+    width: 20rem;
+  }
+  .hero-section {
+    min-height: 72vh;
+  }
+  .about-me {
+    width: 25rem;
+  }
+  form {
+    width: 25rem;
+  }
+}
+
+/* @keyframes glow {
+  0% { box-shadow: 0 0 1rem white, 0 0 3rem var(--blue-glow); }
+  50% { box-shadow: 0 0 2rem white, 0 0 6rem var(--blue-glow); }
+  100% { box-shadow: 0 0 1rem white, 0 0 3rem var(--blue-glow); }
+}
+
+.image-container {
+  animation: glow 3s infinite ease-in-out;
+} */
+
+/* .hero-section {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+} */
