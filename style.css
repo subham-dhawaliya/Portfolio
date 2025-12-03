@@ -94,7 +94,7 @@ img {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 3px solid white;
-  background-image: url(/images/3.jpg.jpg);
+  background-image: url(/images/3.jpg);
   background-position: center;
   background-size: cover; 
   box-shadow: 0 0 10px white, 0 0 15px var(--blue-glow);
