@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subham | Portfolio</title>
     <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
-
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-
-<!-- Main .ico file -->
-<link rel="icon" href="favicon_io/favicon.ico">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon_io/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicon_io/favicon-128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicon_io/favicon-256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/favicon-512.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="favicon_io/favicon-128.png">
+    <!-- Web Manifest -->
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -100,7 +101,7 @@
         <div class="container">
           <div class="row align-items-center gap-5 gap-lg-0">
             <div class="col-lg-6">
-              <span class="text-white text-uppercase main-txt">Hello I'm</span>
+              <span class="text-white text-uppercase main-txt">Hi I'm</span>
               <h1 class="text-white fw-bold">
                 <span style="color: #3b7fe4"> Subham </span> Full Stack
                 Developer
@@ -125,8 +126,8 @@
 
       <section class="section-container" id="about">
         <div class="container">
-          <div class="row justify-content-center">
-            <div>
+          <div class="row align-items-center gap-5 gap-lg-0">
+            <div class="col-lg-6">
               <span class="text-white text-uppercase"
                 >Let me introduce myself</span
               >
@@ -141,7 +142,7 @@
               </p>
               <h5 class="text-white mt-4">Contact</h5>
               <p class="txt-gray para">
-                Do you have fancy saying hi to me or you want to get started
+                Do you have fancy saying, hi to me or you want to get started or
                 need my help? Feel free to contact me.
                 <a href="https://mail.google.com/mail/u/0/#sent?compose=new" class="txt-gradient d-block"
                   >www.skgdhawaliya@gmail.com</a
@@ -153,7 +154,21 @@
                 role="button"
                 >Hire me</a
               >
-              <!-- Change bg-green to bg-gradient -->
+            </div>
+            <div class="col-lg-6">
+              <div class="about-image-container text-center">
+                <img 
+                  src="images/laptop.webp" 
+                  alt="Developer coding on computer" 
+                  class="img-fluid rounded-3 about-img"
+                />
+                <div class="about-caption mt-3">
+                  <p class="txt-gray fst-italic">
+                    "Code is like humor — if you have to explain it, it’s not good enough." 
+                    <span class="txt-gradient d-block mt-2">— Turning coffee into code since day one ☕</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,11 +201,11 @@
               <div class="card bg-dark-blue py-5 glow hover-card h-100">
                 <div class="card-body">
                   <img
-                    src="images/css.png"
+                    src="images/CSS3_logo.svg"
                     alt="csslogo"
                     class="img-fluid mx-auto d-block skill-img"
                   />
-                  <h5 class="card-title text-white fs-4 mb-2 mt-3">CSS</h5>
+                  <h5 class="card-title text-white fs-4 mb-2 ">CSS</h5>
                   <p class="card-text txt-gray">
                     Designing responsive and modern layouts.
                   </p>
@@ -201,7 +216,7 @@
               <div class="card bg-dark-blue py-5 glow hover-card h-100">
                 <div class="card-body">
                   <img
-                    src="images/bootstrap.png"
+                    src="images/Bootstrap_logo.svg"
                     alt="bootstraplogo"
                     class="img-fluid mx-auto d-block skill-img"
                   />
@@ -238,7 +253,7 @@
               <div class="card bg-dark-blue py-5 glow hover-card h-100">
                 <div class="card-body">
                   <image
-                    src="images/php.png"
+                    src="images/php_PNG43.png"
                     alt="phplogo"
                     class="img-fluid mx-auto d-block skill-img"
                   />
@@ -281,18 +296,19 @@
             <div class="col-lg-4 mycard glow">
               <div class="card bg-dark-blue h-100">
                 <img
-                  src="images/dashboard.png"
+                  src="images/2fa.png"
                   class="card-img-top"
                   alt="Project1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Admin-Dashboard</h5>
+                  <h5 class="card-title text-white">Secure User Authentication & Real-Time Chat System</h5>
                   <p class="card-text txt-gray">
-                    A User Management System built with the Laravel framework allows administrators to manage user accounts, 
-                    including registration, login, update, and deletion.
-                     It provides secure authentication, role-based access,
-                      and an organized dashboard for efficient user control.
+                    Developed a secure and scalable web application that enables users to register, log in, and communicate in real time. The system implements robust authentication mechanisms including email verification, Google OAuth integration, and two-factor authentication (2FA) to ensure user data security. It features a dynamic dashboard where users can manage their profiles and interact through a real-time chat system built with modern web technologies. The application focuses on performance, security, and a seamless user experience.
                   </p>
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="https://github.com/subham-dhawaliya/2fa-authantication-dashboard.git" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -310,6 +326,10 @@
                     gallery images, pages, and customer enquiries. Built with a clean, 
                     responsive UI and a secure, scalable backend.
                   </p>
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="https://github.com/subham-dhawaliya/Restaurant-project.git" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -327,137 +347,26 @@
     specialization-based learning, and minimum salary assurance. Designed with a clean UI/UX,
      integrated registration form, and strong call-to-actions to boost user engagement and lead conversions.
                   </p>
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="https://github.com/subham-dhawaliya/website-gms-clone.git" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </section>
 
-      <!--Testimonial-->
-      <!-- <section class="section-container">
-        <div class="container text-center">
-          <span class="text-white text-uppercase main-txt"
-            >What my client says</span
-          >
-          <h2 class="txt-gradient fw-semibold">Testimonial</h2> 
-          <div class="swiper mySwiper mt-5">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide bg-dark-blue p-4 rounded-3">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="profile">
-                      <img src="images/client1.jpg" alt="client1" />
-                    </div>
-                  </div>
-                  <div class="col-lg-10 text-start">
-                    <h5 class="text-white">Aarav Mehta</h5>
-                    <p class="text-white">Startup Founder</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <p class="txt-gray text-start">
-                    Shivam’s design sense is amazing! He turned my ideas into a
-                    clean, modern website that perfectly represents my brand.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-dark-blue p-4 rounded-3">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="profile">
-                      <img src="images/client2.jpg" alt="client2" />
-                    </div>
-                  </div>
-                  <div class="col-lg-10 text-start">
-                    <h5 class="text-white">Priya Sharma</h5>
-                    <p class="text-white">Graphic Designer</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <p class="txt-gray text-start">
-                    Working with Shivam was effortless. He understood exactly
-                    what I needed and delivered ahead of time.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-dark-blue p-4 rounded-3">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="profile">
-                      <img src="images/client3.jpg" alt="client3" />
-                    </div>
-                  </div>
-                  <div class="col-lg-10 text-start">
-                    <h5 class="text-white">Rahul Verma</h5>
-                    <p class="text-white">Business Consultant</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <p class="txt-gray text-start">
-                    I was impressed by the attention to detail and
-                    responsiveness. My website now looks professional and
-                    performs smoothly.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-dark-blue p-4 rounded-3">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="profile">
-                      <img src="images/client4.jpg" alt="client4" />
-                    </div>
-                  </div>
-                  <div class="col-lg-10 text-start">
-                    <h5 class="text-white">Neha Kapoor</h5>
-                    <p class="text-white">Digital Marketer</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <p class="txt-gray text-start">
-                    Shivam’s portfolio work speaks for itself. The combination
-                    of creativity and coding skills is just outstanding.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-dark-blue p-4 rounded-3">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="profile">
-                      <img src="images/client5.jpg" alt="client5" />
-                    </div>
-                  </div>
-                  <div class="col-lg-10 text-start">
-                    <h5 class="text-white">Aditya Singh</h5>
-                    <p class="text-white">Freelancer</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <p class="txt-gray text-start">
-                    Highly recommended! The UI and performance exceeded my
-                    expectations — great work and great communication
-                    throughout.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="control mt-5 d-flex justify-content-center gap-4">
-              <i class="fa-solid fa-arrow-left bg-gradient  prev"></i>
-              <i class="fa-solid fa-arrow-right bg-gradient  next"></i>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <section class="section-container" id="projectWork">
         <div class="container text-center">
           <span class="text-white text-uppercase main-txt">Recent Blogs</span>
           <h2 class="txt-gradient fw-semibold">Blogs</h2>
-          <!--Change txt-green to txt-gradient-->
 
-          <div class="row justify-content-center mt-5 gap-5">
+          <div class="row justify-content-center align-items-stretch mt-5 gap-5">
             <div class="col-lg-4 blog-card glow">
-              <div class="card bg-dark-blue px-2 pb-2">
+              <div class="card bg-dark-blue px-2 pb-2 h-100">
                 <img
                   src="images/students.png"
                   class="card-img-top"
@@ -469,18 +378,16 @@
                     Developed a Students CRUD web application with search, pagination, and complete record management functionality. 
                     Designed a clean,user-friendly interface with options to view, edit, and delete student details efficiently.
                   </p>
-                  <a
-                    class="btn mybtn rounded-0 text-uppercase bg-gradient"
-                    href="#"
-                    role="button"
-                    >View Blog</a
-                  >
-                  <!-- Change bg-green to bg-gradient -->
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="https://github.com/subham-dhawaliya/using-laravel-crud-page.git" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    <a class="btn mybtn rounded-0 text-uppercase bg-gradient ms-2" href="#" role="button">View Blog</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 blog-card glow">
-              <div class="card bg-dark-blue px-2 pb-2">
+              <div class="card bg-dark-blue px-2 pb-2 h-100">
                 <img
                   src="images/admin.png"
                   class="card-img-top"
@@ -492,18 +399,16 @@
                   Developed a secure role-based admin dashboard with analytics and charts,
                    where only the admin can manage all users while regular users can edit or delete only their own profiles.
                   </p>
-                  <a
-                    class="btn mybtn rounded-0 text-uppercase bg-gradient"
-                    href="#"
-                    role="button"
-                    >View Blog</a
-                  >
-                  <!-- Change bg-green to bg-gradient -->
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="https://github.com/subham-dhawaliya/admin-dashboard.git" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    <a class="btn mybtn rounded-0 text-uppercase bg-gradient ms-2" href="#" role="button">View Blog</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 blog-card glow">
-              <div class="card bg-dark-blue px-2 pb-2">
+              <div class="card bg-dark-blue px-2 pb-2 h-100">
                 <img
                   src="images/e-commerce.png"
                   class="card-img-top"
@@ -515,17 +420,19 @@
                     Built an e-commerce frontend featuring product search, top deals display, and a clean, modern UI with login, cart, 
                     and seller options. Designed responsive product cards to showcase items attractively and enhance the shopping experience.
                   </p>
-                  <a
-                    class="btn mybtn rounded-0 text-uppercase bg-gradient"
-                    href="#"
-                    role="button"
-                    >View Blog</a
-                  >
-                  <!-- Change bg-green to bg-gradient -->
+                  <span class="see-more-btn txt-gradient">See More</span>
+                  <div class="card-buttons mt-3">
+                    <a class="btn mybtn rounded-0 bg-gradient" href="#" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    <a class="btn mybtn rounded-0 text-uppercase bg-gradient ms-2" href="#" role="button">View Blog</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section-conta
         </div>
       </section>
 
@@ -581,7 +488,7 @@
             <div
               class="col-lg-6 d-flex justify-content-sm-start justify-content-center"
             >
-              <a href="#"
+              <a href="https://www.linkedin.com/in/subham-dhawaliya-b6124b378/"
                 ><i class="fa-brands fa-linkedin txt-gradient fs-5"></i
                 ></a>
               <!--Change txt-green to txt-gradient-->
@@ -593,14 +500,14 @@
                 ><i class="fa-brands fa-github txt-gradient fs-5"></i
                 ></a>
               <!--Change txt-green to txt-gradient-->
-              <a href="#" class="ms-3"
+              <a href="https://www.instagram.com/shubham._.exe/" class="ms-3"
                 ><i class="fa-brands fa-instagram txt-gradient fs-5"></i
               ></a>
               <!--Change txt-green to txt-gradient-->
             </div>
             <div class="col-lg-6">
               <p class="txt-gray text-lg-end text-center">
-                Copyright &copy; 2025-All rights are reserved by Subham
+               © 2025 — All Rights Reserved • Designed & Developed by Subham
               </p>
             </div>
           </div>

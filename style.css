@@ -48,26 +48,40 @@ img {
 }
 
 .navbar {
-  padding: 0.3rem 1rem; /* smaller padding */
-  height: 5rem; /* control total navbar height */
+  padding: 0.3rem 1rem;
+  height: 5rem;
 }
+
 .navbar-brand img {
-  width: 70px; /* logo size smaller */
+  width: 70px;
   height: 70px;
 }
 
-
+/* 🔥 Sticky ko Fixed karna जरूरी है */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   backdrop-filter: blur(15px);
   background: rgba(13, 17, 23, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-
-  width: 100%;          /* <-- yahi line add karo */
-  box-sizing: border-box; /* optional but recommended */
+  width: 100%;
+  box-sizing: border-box;
 }
+
+/* 🔥 Scroll / anchor offset fix */
+html {
+  scroll-padding-top: 5rem; /* navbar height */
+}
+
+/* 🔥 Body content hidden ना हो इसलिए */
+body {
+  padding-top: 5rem;
+}
+
+
+
 
 
 .mybtn {
@@ -141,12 +155,13 @@ p {
 }
 
 .skill-img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  margin-bottom: 15px;
-  transition: all 0.3s ease; /* smooth hover effect */
+  display: block;
+  margin: 0 auto 15px;
 }
+
 
 .skill-img:hover {
   transform: scale(1.2); /* thoda zoom effect on hover */
@@ -187,11 +202,37 @@ p {
   transform: scale(1);
   width: 21rem;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mycard .card {
   height: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mycard .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mycard .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mycard .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
 }
 
 .mycard p {
@@ -211,6 +252,37 @@ p {
 
 .blog-card {
   width: 20rem;
+}
+
+.blog-card .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.blog-card .btn {
+  margin-top: auto;
 }
 
 form {
@@ -293,19 +365,163 @@ footer i:hover {
   h1 {
     font-size: 2.8rem;
   }
+  h2 {
+    font-size: 2.5rem;
+  }
   .image-container {
-    width: 20rem;
+    width: 15rem;
   }
   .hero-section {
     min-height: 72vh;
   }
   .about-me {
-    width: 25rem;
+    width: 100%;
   }
   form {
-    width: 100%;     /* screen ke hisaab se fit */
-    max-width: 25rem; /* jisse form zyada bada bhi na ho */
-    margin: 0 auto;  /* center guarantee */
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  html {
+    scroll-padding-top: 6rem;
+  }
+  body {
+    padding-top: 6rem;
+  }
+  
+  /* Cards responsive */
+  .mycard {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  
+  .mycard .card {
+    min-height: auto;
+  }
+  
+  .mycard:hover {
+    transform: scale(1.02);
+  }
+  
+  .blog-card {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  
+  /* Card buttons stack on mobile */
+  .card-buttons {
+    flex-direction: column;
+  }
+  
+  .card-buttons .btn {
+    width: 100%;
+    margin: 0 !important;
+  }
+  
+  /* About section */
+  .about-image-container {
+    margin-top: 2rem;
+  }
+  
+  .para {
+    max-width: 100%;
   }
 }
 
+/* Tablet responsive */
+@media screen and (min-width: 681px) and (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .image-container {
+    width: 18rem;
+  }
+  
+  .mycard {
+    width: 18rem;
+  }
+  
+  .mycard .card {
+    min-height: 400px;
+  }
+  
+  .blog-card {
+    width: 18rem;
+  }
+  
+  .about-image-container {
+    margin-top: 2rem;
+  }
+}
+
+
+
+/* About Section Image */
+.about-img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 30px rgba(81, 90, 218, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(81, 90, 218, 0.5);
+}
+
+.about-image-container {
+  position: relative;
+}
+
+.about-caption {
+  padding: 1rem;
+}
+
+.about-caption p {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .about-image-container {
+    margin-top: 2rem;
+  }
+}
+
+
+/* See More Button */
+.see-more-btn {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Card text expanded state */
+.card-text.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* Card buttons */
+.card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-buttons .btn {
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+}

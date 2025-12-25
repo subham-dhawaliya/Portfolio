@@ -19,3 +19,22 @@ var swiper = new Swiper(".mySwiper", {
     });
 
 
+
+// See More Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const seeMoreBtns = document.querySelectorAll('.see-more-btn');
+  
+  seeMoreBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const cardText = this.previousElementSibling;
+      
+      if (cardText.classList.contains('expanded')) {
+        cardText.classList.remove('expanded');
+        this.textContent = 'See More';
+      } else {
+        cardText.classList.add('expanded');
+        this.textContent = 'See Less';
+      }
+    });
+  });
+});
